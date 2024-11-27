@@ -1,10 +1,15 @@
-﻿import React from "react";
+﻿import React, { ReactNode } from "react";
 
-import Counter from '../views/Counter/index.js';
+import Counter from '../views/Counter/index';
 
+interface CounterState {
+    count: number;
+}
 
-export default class CounterContainer extends React.Component {
-    constructor(props) {
+interface CounterContainerProps {}
+
+export default class CounterContainer extends React.Component<CounterContainerProps, CounterState> {
+    constructor(props : any) {
         super(props);
         this.state = {
             count: 0
@@ -12,9 +17,11 @@ export default class CounterContainer extends React.Component {
     }
 
     increment = () => {
-        this.setState(prevState => ({
-            count: prevState.count + 1
-        }));
+        this.setState(prevState => {
+            return ({
+                count: prevState.count + 1
+            });
+        });
     };
 
     decrement = () => {
@@ -29,14 +36,13 @@ export default class CounterContainer extends React.Component {
         })
     };
 
-    render() {
+    render()  {
         return <Counter
             count={this.state.count}
             onIncrement={this.increment}
             onDecrement={this.decrement}
             onReset={this.reset}
         />;
-
     }
 }
 

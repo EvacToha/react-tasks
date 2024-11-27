@@ -1263,61 +1263,6 @@ eval("\n\nif (false) {} else {\n  module.exports = __webpack_require__(/*! ./cjs
 
 /***/ }),
 
-/***/ "./containers/CounterContainer.js":
-/*!****************************************!*\
-  !*** ./containers/CounterContainer.js ***!
-  \****************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ CounterContainer)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _views_Counter_index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../views/Counter/index.js */ \"./views/Counter/index.js\");\nfunction _typeof(o) { \"@babel/helpers - typeof\"; return _typeof = \"function\" == typeof Symbol && \"symbol\" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && \"function\" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? \"symbol\" : typeof o; }, _typeof(o); }\nfunction _classCallCheck(a, n) { if (!(a instanceof n)) throw new TypeError(\"Cannot call a class as a function\"); }\nfunction _defineProperties(e, r) { for (var t = 0; t < r.length; t++) { var o = r[t]; o.enumerable = o.enumerable || !1, o.configurable = !0, \"value\" in o && (o.writable = !0), Object.defineProperty(e, _toPropertyKey(o.key), o); } }\nfunction _createClass(e, r, t) { return r && _defineProperties(e.prototype, r), t && _defineProperties(e, t), Object.defineProperty(e, \"prototype\", { writable: !1 }), e; }\nfunction _callSuper(t, o, e) { return o = _getPrototypeOf(o), _possibleConstructorReturn(t, _isNativeReflectConstruct() ? Reflect.construct(o, e || [], _getPrototypeOf(t).constructor) : o.apply(t, e)); }\nfunction _possibleConstructorReturn(t, e) { if (e && (\"object\" == _typeof(e) || \"function\" == typeof e)) return e; if (void 0 !== e) throw new TypeError(\"Derived constructors may only return object or undefined\"); return _assertThisInitialized(t); }\nfunction _assertThisInitialized(e) { if (void 0 === e) throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); return e; }\nfunction _isNativeReflectConstruct() { try { var t = !Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); } catch (t) {} return (_isNativeReflectConstruct = function _isNativeReflectConstruct() { return !!t; })(); }\nfunction _getPrototypeOf(t) { return _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function (t) { return t.__proto__ || Object.getPrototypeOf(t); }, _getPrototypeOf(t); }\nfunction _inherits(t, e) { if (\"function\" != typeof e && null !== e) throw new TypeError(\"Super expression must either be null or a function\"); t.prototype = Object.create(e && e.prototype, { constructor: { value: t, writable: !0, configurable: !0 } }), Object.defineProperty(t, \"prototype\", { writable: !1 }), e && _setPrototypeOf(t, e); }\nfunction _setPrototypeOf(t, e) { return _setPrototypeOf = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function (t, e) { return t.__proto__ = e, t; }, _setPrototypeOf(t, e); }\nfunction _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }\nfunction _toPropertyKey(t) { var i = _toPrimitive(t, \"string\"); return \"symbol\" == _typeof(i) ? i : i + \"\"; }\nfunction _toPrimitive(t, r) { if (\"object\" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || \"default\"); if (\"object\" != _typeof(i)) return i; throw new TypeError(\"@@toPrimitive must return a primitive value.\"); } return (\"string\" === r ? String : Number)(t); }\n\n\nvar CounterContainer = /*#__PURE__*/function (_React$Component) {\n  function CounterContainer(props) {\n    var _this;\n    _classCallCheck(this, CounterContainer);\n    _this = _callSuper(this, CounterContainer, [props]);\n    _defineProperty(_this, \"increment\", function () {\n      _this.setState(function (prevState) {\n        return {\n          count: prevState.count + 1\n        };\n      });\n    });\n    _defineProperty(_this, \"decrement\", function () {\n      _this.setState(function (prevState) {\n        return {\n          count: prevState.count - 1\n        };\n      });\n    });\n    _defineProperty(_this, \"reset\", function () {\n      _this.setState({\n        count: 0\n      });\n    });\n    _this.state = {\n      count: 0\n    };\n    return _this;\n  }\n  _inherits(CounterContainer, _React$Component);\n  return _createClass(CounterContainer, [{\n    key: \"render\",\n    value: function render() {\n      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_views_Counter_index_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"], {\n        count: this.state.count,\n        onIncrement: this.increment,\n        onDecrement: this.decrement,\n        onReset: this.reset\n      });\n    }\n  }]);\n}((react__WEBPACK_IMPORTED_MODULE_0___default().Component));\n\n\n//# sourceURL=webpack://task1t2/./containers/CounterContainer.js?");
-
-/***/ }),
-
-/***/ "./src/App.js":
-/*!********************!*\
-  !*** ./src/App.js ***!
-  \********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ App)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _containers_CounterContainer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../containers/CounterContainer */ \"./containers/CounterContainer.js\");\nfunction _typeof(o) { \"@babel/helpers - typeof\"; return _typeof = \"function\" == typeof Symbol && \"symbol\" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && \"function\" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? \"symbol\" : typeof o; }, _typeof(o); }\nfunction _classCallCheck(a, n) { if (!(a instanceof n)) throw new TypeError(\"Cannot call a class as a function\"); }\nfunction _defineProperties(e, r) { for (var t = 0; t < r.length; t++) { var o = r[t]; o.enumerable = o.enumerable || !1, o.configurable = !0, \"value\" in o && (o.writable = !0), Object.defineProperty(e, _toPropertyKey(o.key), o); } }\nfunction _createClass(e, r, t) { return r && _defineProperties(e.prototype, r), t && _defineProperties(e, t), Object.defineProperty(e, \"prototype\", { writable: !1 }), e; }\nfunction _toPropertyKey(t) { var i = _toPrimitive(t, \"string\"); return \"symbol\" == _typeof(i) ? i : i + \"\"; }\nfunction _toPrimitive(t, r) { if (\"object\" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || \"default\"); if (\"object\" != _typeof(i)) return i; throw new TypeError(\"@@toPrimitive must return a primitive value.\"); } return (\"string\" === r ? String : Number)(t); }\nfunction _callSuper(t, o, e) { return o = _getPrototypeOf(o), _possibleConstructorReturn(t, _isNativeReflectConstruct() ? Reflect.construct(o, e || [], _getPrototypeOf(t).constructor) : o.apply(t, e)); }\nfunction _possibleConstructorReturn(t, e) { if (e && (\"object\" == _typeof(e) || \"function\" == typeof e)) return e; if (void 0 !== e) throw new TypeError(\"Derived constructors may only return object or undefined\"); return _assertThisInitialized(t); }\nfunction _assertThisInitialized(e) { if (void 0 === e) throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); return e; }\nfunction _isNativeReflectConstruct() { try { var t = !Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); } catch (t) {} return (_isNativeReflectConstruct = function _isNativeReflectConstruct() { return !!t; })(); }\nfunction _getPrototypeOf(t) { return _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function (t) { return t.__proto__ || Object.getPrototypeOf(t); }, _getPrototypeOf(t); }\nfunction _inherits(t, e) { if (\"function\" != typeof e && null !== e) throw new TypeError(\"Super expression must either be null or a function\"); t.prototype = Object.create(e && e.prototype, { constructor: { value: t, writable: !0, configurable: !0 } }), Object.defineProperty(t, \"prototype\", { writable: !1 }), e && _setPrototypeOf(t, e); }\nfunction _setPrototypeOf(t, e) { return _setPrototypeOf = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function (t, e) { return t.__proto__ = e, t; }, _setPrototypeOf(t, e); }\n\n\nvar App = /*#__PURE__*/function (_React$Component) {\n  function App() {\n    _classCallCheck(this, App);\n    return _callSuper(this, App, arguments);\n  }\n  _inherits(App, _React$Component);\n  return _createClass(App, [{\n    key: \"render\",\n    value: function render() {\n      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_containers_CounterContainer__WEBPACK_IMPORTED_MODULE_1__[\"default\"], null));\n    }\n  }]);\n}((react__WEBPACK_IMPORTED_MODULE_0___default().Component));\n\n\n//# sourceURL=webpack://task1t2/./src/App.js?");
-
-/***/ }),
-
-/***/ "./src/index.js":
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-dom/client */ \"./node_modules/react-dom/client.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./App */ \"./src/App.js\");\n\n\n\nvar root = react_dom_client__WEBPACK_IMPORTED_MODULE_0__.createRoot(document.getElementById(\"app\"));\nroot.render(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_App__WEBPACK_IMPORTED_MODULE_2__[\"default\"], null));\n\n//# sourceURL=webpack://task1t2/./src/index.js?");
-
-/***/ }),
-
-/***/ "./views/Counter/index.js":
-/*!********************************!*\
-  !*** ./views/Counter/index.js ***!
-  \********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ \"./node_modules/prop-types/index.js\");\n/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _styles_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles.js */ \"./views/Counter/styles.js\");\n\n\n\nvar Counter = function Counter(_ref) {\n  var onIncrement = _ref.onIncrement,\n    onDecrement = _ref.onDecrement,\n    onReset = _ref.onReset,\n    count = _ref.count;\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_styles_js__WEBPACK_IMPORTED_MODULE_1__.CounterContainer, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_styles_js__WEBPACK_IMPORTED_MODULE_1__.CounterDisplay, null, \" \", count, \" \"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_styles_js__WEBPACK_IMPORTED_MODULE_1__.ButtonsContainer, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_styles_js__WEBPACK_IMPORTED_MODULE_1__.MyButton, {\n    onClick: onIncrement\n  }, \"Increment\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_styles_js__WEBPACK_IMPORTED_MODULE_1__.MyButton, {\n    onClick: onDecrement\n  }, \"Decrement\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_styles_js__WEBPACK_IMPORTED_MODULE_1__.MyButton, {\n    onClick: onReset\n  }, \"Reset\")));\n};\nCounter.propTypes = {\n  count: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().number).isRequired,\n  onIncrement: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().func).isRequired,\n  onDecrement: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().func).isRequired,\n  onReset: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().func).isRequired\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Counter);\n\n//# sourceURL=webpack://task1t2/./views/Counter/index.js?");
-
-/***/ }),
-
-/***/ "./views/Counter/styles.js":
-/*!*********************************!*\
-  !*** ./views/Counter/styles.js ***!
-  \*********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   ButtonsContainer: () => (/* binding */ ButtonsContainer),\n/* harmony export */   CounterContainer: () => (/* binding */ CounterContainer),\n/* harmony export */   CounterDisplay: () => (/* binding */ CounterDisplay),\n/* harmony export */   MyButton: () => (/* binding */ MyButton)\n/* harmony export */ });\n/* harmony import */ var _mui_system__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @mui/system */ \"./node_modules/@mui/system/esm/styled/styled.js\");\n/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mui/material */ \"./node_modules/@mui/material/Button/Button.js\");\n\n\nvar CounterContainer = (0,_mui_system__WEBPACK_IMPORTED_MODULE_0__[\"default\"])('div')({\n  display: 'flex',\n  flexDirection: 'column',\n  alignItems: 'center',\n  justifyContent: 'center',\n  height: '200px'\n});\nvar CounterDisplay = (0,_mui_system__WEBPACK_IMPORTED_MODULE_0__[\"default\"])('div')({\n  fontSize: '48px',\n  fontWeight: 'bold',\n  marginBottom: '20px'\n});\nvar ButtonsContainer = (0,_mui_system__WEBPACK_IMPORTED_MODULE_0__[\"default\"])('div')({\n  display: 'flex',\n  justifyContent: 'center',\n  gap: '10px'\n});\nvar MyButton = (0,_mui_system__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(_mui_material__WEBPACK_IMPORTED_MODULE_1__[\"default\"])({\n  background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',\n  borderRadius: 10,\n  border: 0,\n  color: 'white',\n  height: 50,\n  padding: '0 30px',\n  boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)'\n});\n\n\n//# sourceURL=webpack://task1t2/./views/Counter/styles.js?");
-
-/***/ }),
-
 /***/ "./node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js":
 /*!**********************************************************************************!*\
   !*** ./node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js ***!
@@ -1544,6 +1489,61 @@ eval("/**\n * @license React\n * scheduler.development.js\n *\n * Copyright (c) 
 
 "use strict";
 eval("\n\nif (false) {} else {\n  module.exports = __webpack_require__(/*! ./cjs/scheduler.development.js */ \"./node_modules/scheduler/cjs/scheduler.development.js\");\n}\n\n\n//# sourceURL=webpack://task1t2/./node_modules/scheduler/index.js?");
+
+/***/ }),
+
+/***/ "./containers/CounterContainer.tsx":
+/*!*****************************************!*\
+  !*** ./containers/CounterContainer.tsx ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ \"./node_modules/react/jsx-runtime.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _views_Counter_index__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../views/Counter/index */ \"./views/Counter/index.tsx\");\nvar __extends = (undefined && undefined.__extends) || (function () {\n    var extendStatics = function (d, b) {\n        extendStatics = Object.setPrototypeOf ||\n            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||\n            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };\n        return extendStatics(d, b);\n    };\n    return function (d, b) {\n        if (typeof b !== \"function\" && b !== null)\n            throw new TypeError(\"Class extends value \" + String(b) + \" is not a constructor or null\");\n        extendStatics(d, b);\n        function __() { this.constructor = d; }\n        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\n    };\n})();\n\n\n\nvar CounterContainer = /** @class */ (function (_super) {\n    __extends(CounterContainer, _super);\n    function CounterContainer(props) {\n        var _this = _super.call(this, props) || this;\n        _this.increment = function () {\n            _this.setState(function (prevState) {\n                return ({\n                    count: prevState.count + 1\n                });\n            });\n        };\n        _this.decrement = function () {\n            _this.setState(function (prevState) { return ({\n                count: prevState.count - 1\n            }); });\n        };\n        _this.reset = function () {\n            _this.setState({\n                count: 0\n            });\n        };\n        _this.state = {\n            count: 0\n        };\n        return _this;\n    }\n    CounterContainer.prototype.render = function () {\n        return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_views_Counter_index__WEBPACK_IMPORTED_MODULE_2__[\"default\"], { count: this.state.count, onIncrement: this.increment, onDecrement: this.decrement, onReset: this.reset });\n    };\n    return CounterContainer;\n}((react__WEBPACK_IMPORTED_MODULE_1___default().Component)));\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (CounterContainer);\n\n\n//# sourceURL=webpack://task1t2/./containers/CounterContainer.tsx?");
+
+/***/ }),
+
+/***/ "./src/App.tsx":
+/*!*********************!*\
+  !*** ./src/App.tsx ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ \"./node_modules/react/jsx-runtime.js\");\n/* harmony import */ var _containers_CounterContainer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../containers/CounterContainer */ \"./containers/CounterContainer.tsx\");\n\n\nvar App = function () {\n    return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_containers_CounterContainer__WEBPACK_IMPORTED_MODULE_1__[\"default\"], {});\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (App);\n\n\n//# sourceURL=webpack://task1t2/./src/App.tsx?");
+
+/***/ }),
+
+/***/ "./src/index.tsx":
+/*!***********************!*\
+  !*** ./src/index.tsx ***!
+  \***********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ \"./node_modules/react/jsx-runtime.js\");\n/* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom/client */ \"./node_modules/react-dom/client.js\");\n/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./App */ \"./src/App.tsx\");\n\n\n\nvar root = react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot(document.getElementById(\"app\"));\nroot.render((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_App__WEBPACK_IMPORTED_MODULE_2__[\"default\"], {}));\n\n\n//# sourceURL=webpack://task1t2/./src/index.tsx?");
+
+/***/ }),
+
+/***/ "./views/Counter/index.tsx":
+/*!*********************************!*\
+  !*** ./views/Counter/index.tsx ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ \"./node_modules/react/jsx-runtime.js\");\n/* harmony import */ var _styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles */ \"./views/Counter/styles.ts\");\n\n\nvar Counter = function (_a) {\n    var onIncrement = _a.onIncrement, onDecrement = _a.onDecrement, onReset = _a.onReset, count = _a.count;\n    return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, { children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_styles__WEBPACK_IMPORTED_MODULE_1__.CounterContainer, { children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_styles__WEBPACK_IMPORTED_MODULE_1__.CounterDisplay, { children: [\" \", count, \" \"] }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_styles__WEBPACK_IMPORTED_MODULE_1__.ButtonsContainer, { children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_styles__WEBPACK_IMPORTED_MODULE_1__.MyButton, { onClick: onIncrement, children: \"Increment\" }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_styles__WEBPACK_IMPORTED_MODULE_1__.MyButton, { onClick: onDecrement, children: \"Decrement\" }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_styles__WEBPACK_IMPORTED_MODULE_1__.MyButton, { onClick: onReset, children: \"Reset\" })] })] }) });\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Counter);\n\n\n//# sourceURL=webpack://task1t2/./views/Counter/index.tsx?");
+
+/***/ }),
+
+/***/ "./views/Counter/styles.ts":
+/*!*********************************!*\
+  !*** ./views/Counter/styles.ts ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   ButtonsContainer: () => (/* binding */ ButtonsContainer),\n/* harmony export */   CounterContainer: () => (/* binding */ CounterContainer),\n/* harmony export */   CounterDisplay: () => (/* binding */ CounterDisplay),\n/* harmony export */   MyButton: () => (/* binding */ MyButton)\n/* harmony export */ });\n/* harmony import */ var _mui_system__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @mui/system */ \"./node_modules/@mui/system/esm/styled/styled.js\");\n/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mui/material */ \"./node_modules/@mui/material/Button/Button.js\");\n\n\nvar CounterContainer = (0,_mui_system__WEBPACK_IMPORTED_MODULE_0__[\"default\"])('div')({\n    display: 'flex',\n    flexDirection: 'column',\n    alignItems: 'center',\n    justifyContent: 'center',\n    height: '200px',\n});\nvar CounterDisplay = (0,_mui_system__WEBPACK_IMPORTED_MODULE_0__[\"default\"])('div')({\n    fontSize: '48px',\n    fontWeight: 'bold',\n    marginBottom: '20px',\n});\nvar ButtonsContainer = (0,_mui_system__WEBPACK_IMPORTED_MODULE_0__[\"default\"])('div')({\n    display: 'flex',\n    justifyContent: 'center',\n    gap: '10px',\n});\nvar MyButton = (0,_mui_system__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(_mui_material__WEBPACK_IMPORTED_MODULE_1__[\"default\"])({\n    background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',\n    borderRadius: 10,\n    border: 0,\n    color: 'white',\n    height: 50,\n    padding: '0 30px',\n    boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',\n});\n\n\n\n//# sourceURL=webpack://task1t2/./views/Counter/styles.ts?");
 
 /***/ }),
 
@@ -1786,7 +1786,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/index.js");
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/index.tsx");
 /******/ 	
 /******/ })()
 ;

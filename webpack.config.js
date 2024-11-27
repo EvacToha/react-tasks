@@ -3,7 +3,7 @@
 module.exports = {
     mode: "development",
 
-    entry: "./src/index.js",
+    entry: "./src/index.tsx",
 
     output: {
         filename: 'main.js',
@@ -15,21 +15,28 @@ module.exports = {
         static: {
             directory: path.resolve(__dirname, 'src'),
         },
-
     },
-
+    resolve: {
+        extensions: ['.ts', '.tsx', '.js'],
+    },
     module: {
         rules: [
             {
-                test: /.(js|jsx)$/,
+                test: /\.tsx?$/,
+                use: 'ts-loader',
                 exclude: /node_modules/,
-                use: {
-                    loader: "babel-loader",
-                    options:{
-                        presets: ["@babel/preset-env", "@babel/preset-react"],
-                    }
-                },
             },
         ],
     },
 };
+
+// {
+//     test: /.(js|jsx)$/,
+//         exclude: /node_modules/,
+//     use: {
+//     loader: "babel-loader",
+//         options:{
+//         presets: ["@babel/preset-env", "@babel/preset-react"],
+//     }
+// },
+// },
