@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
 
-  "homepage": "https://evactoha.github.io/react-tasks",
+  "homepage": "https://evactoha.github.io/react-tasks/src",
 
   "scripts": {
     "build": "webpack",
