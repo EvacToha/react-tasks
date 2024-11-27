@@ -1,17 +1,19 @@
 ﻿import React from "react";
-import { Button, DialogContentText  } from '@mui/material';
 import PropTypes from "prop-types";
+import {MyButton, CounterContainer, CounterDisplay, ButtonsContainer} from './styles.js';
 
 
 const Counter = ({onIncrement, onDecrement, onReset, count}) => {
-    return <>
-        <DialogContentText>
-            {count}
-        </DialogContentText>
-        <Button onClick={onIncrement}>Increment</Button>
-        <Button onClick={onDecrement}>Decrement</Button>
-        <Button onClick={onReset}>Reset</Button>
-    </>
+
+
+    return <CounterContainer>
+        <CounterDisplay> {count} </CounterDisplay>
+        <ButtonsContainer>
+            <MyButton onClick={onIncrement}>Increment</MyButton>
+            <MyButton onClick={onDecrement}>Decrement</MyButton>
+            <MyButton onClick={onReset}>Reset</MyButton>
+        </ButtonsContainer>
+    </CounterContainer>
 }
 
 Counter.propTypes = {
