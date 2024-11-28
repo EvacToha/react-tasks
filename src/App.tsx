@@ -1,9 +1,9 @@
 ﻿import React from "react"
 
-import CounterContainer from "../containers/CounterContainer";
+import CounterManagerContainer from "../containers/CounterManagerContainer";
 
 const App = () => {
-    return <CounterContainer/>
+    return <CounterManagerContainer />
 }
 
 export default App;
