@@ -2,7 +2,7 @@
 import React from "react"
 import App from "./App";
 
-const root = ReactDOM.createRoot(document.getElementById("app"));
+const root = ReactDOM.createRoot(document.getElementById("app") as HTMLElement);
 
 
 root.render(<App />);
