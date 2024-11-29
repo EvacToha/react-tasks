@@ -1,48 +1,23 @@
-﻿import React, { ReactNode } from "react";
+﻿import React, {memo} from "react";
 
 import Counter from '../views/Counter/index';
 
-interface CounterState {
+interface CounterContainerProps {
     count: number;
+    reset: () => void;
+    increment: () => void;
+    decrement: () => void;
 }
 
-interface CounterContainerProps {}
+const CounterContainer = memo(({count, increment, decrement, reset} : CounterContainerProps) => {
 
-export default class CounterContainer extends React.Component<CounterContainerProps, CounterState> {
-    constructor(props : any) {
-        super(props);
-        this.state = {
-            count: 0
-        };
-    }
+    return <Counter
+        count={count}
+        onIncrement={increment}
+        onDecrement={decrement}
+        onReset={reset}
 
-    increment = () => {
-        this.setState(prevState => {
-            return ({
-                count: prevState.count + 1
-            });
-        });
-    };
+    />;
+});
 
-    decrement = () => {
-        this.setState(prevState => ({
-            count: prevState.count - 1
-        }));
-    };
-
-    reset = () => {
-        this.setState({
-            count: 0
-        })
-    };
-
-    render()  {
-        return <Counter
-            count={this.state.count}
-            onIncrement={this.increment}
-            onDecrement={this.decrement}
-            onReset={this.reset}
-        />;
-    }
-}
-
+export default CounterContainer;
