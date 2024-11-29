@@ -1,9 +1,26 @@
 ﻿import React from "react"
+import {BrowserRouter, Route, Routes} from "react-router-dom";
 
-import CounterManagerContainer from "../containers/CounterManagerContainer";
+import MainLayout from "../layouts/MainLayout";
+import CountersPage from "../pages/CountersPage";
+import AboutPage from "../pages/AboutPage";
+import HomePage from "../pages/HomePage";
+import NotFound from "../pages/NotFound";
+import LoginPage from "../pages/LoginPage";
 
 const App = () => {
-    return <CounterManagerContainer />
+    return <BrowserRouter>
+        <Routes>
+            <Route element={<MainLayout />} >
+                <Route path="/" element={<HomePage />} />
+                <Route path="/counters" element={<CountersPage />} />
+                <Route path="/about" element={<AboutPage />} />
+                <Route path="/login" element={<LoginPage />} />
+            </Route>
+            <Route path="*" element={<NotFound />} />
+        </Routes>
+    </BrowserRouter>
+
 }
 
 export default App;

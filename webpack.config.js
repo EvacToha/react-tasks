@@ -15,6 +15,7 @@ module.exports = {
         static: {
             directory: path.resolve(__dirname, 'src'),
         },
+        historyApiFallback: true,
     },
     resolve: {
         extensions: ['.ts', '.tsx', '.js'],
