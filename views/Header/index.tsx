@@ -25,6 +25,7 @@ const Header = () => {
         >
             <Tab label="About" value="/about" />
             <Tab label="Counters" value="/counters" />
+            <Tab label="Login" value="/login" />
         </Tabs>
     );
 }

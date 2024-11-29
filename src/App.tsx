@@ -6,6 +6,7 @@ import CountersPage from "../pages/CountersPage";
 import AboutPage from "../pages/AboutPage";
 import HomePage from "../pages/HomePage";
 import NotFound from "../pages/NotFound";
+import LoginPage from "../pages/LoginPage";
 
 const App = () => {
     return <BrowserRouter>
@@ -14,6 +15,7 @@ const App = () => {
                 <Route path="/" element={<HomePage />} />
                 <Route path="/counters" element={<CountersPage />} />
                 <Route path="/about" element={<AboutPage />} />
+                <Route path="/login" element={<LoginPage />} />
             </Route>
             <Route path="*" element={<NotFound />} />
         </Routes>
